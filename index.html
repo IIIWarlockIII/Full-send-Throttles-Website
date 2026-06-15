@@ -23,12 +23,12 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:14px 4
 .delivery-bar{background:#c8f000;padding:9px 40px;display:flex;align-items:center;justify-content:center;gap:10px;font-size:13px;font-weight:700;color:#000;}
 
 /* HERO SLIDER */
-.hero{position:relative;height:520px;overflow:hidden;}
-.slide{position:absolute;inset:0;opacity:0;transition:opacity 1s ease;}
+.hero{position:relative;height:520px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr 1fr;}
+.slide{position:relative;opacity:1;}
 .slide.active{opacity:1;}
 .slide-img{width:100%;height:100%;object-fit:cover;object-position:center top;}
-.slide-overlay{position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,0.92) 44%,rgba(0,0,0,0.2) 100%);}
-.hero-content{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;justify-content:center;padding:60px 40px;max-width:56%;}
+.slide-overlay{display:none;}
+.hero-content{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;justify-content:center;padding:60px 40px;max-width:56%;background:linear-gradient(to right,rgba(0,0,0,0.95) 55%,transparent 100%);}
 .hero-badge{background:#c8f000;color:#000;font-size:11px;font-weight:700;padding:4px 12px;border-radius:4px;display:inline-block;margin-bottom:16px;letter-spacing:1px;width:fit-content;}
 .hero-logo{height:100px;width:auto;max-width:280px;object-fit:contain;display:block;margin-bottom:14px;}
 .hero-sub{font-size:15px;color:#ccc;margin-bottom:24px;line-height:1.7;}
@@ -36,7 +36,7 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:14px 4
 .btn-wa{background:#25D366;color:#fff;font-weight:700;padding:12px 22px;border-radius:8px;font-size:14px;border:none;cursor:pointer;display:flex;align-items:center;gap:7px;text-decoration:none;}
 .btn-shop{background:transparent;color:#c8f000;font-weight:700;padding:12px 22px;border-radius:8px;font-size:14px;border:2px solid #c8f000;cursor:pointer;}
 .btn-shop:hover{background:#c8f000;color:#000;}
-.slide-dots{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);z-index:3;display:flex;gap:8px;}
+.slide-dots{display:none;}
 .dot{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,0.4);cursor:pointer;border:none;}
 .dot.active{background:#c8f000;}
 

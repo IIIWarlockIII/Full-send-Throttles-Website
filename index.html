@@ -26,7 +26,7 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:14px 4
 .hero{position:relative;height:520px;overflow:hidden;}
 .slide{position:absolute;inset:0;opacity:0;transition:opacity 1s ease;}
 .slide.active{opacity:1;}
-.slide-img{width:100%;height:100%;object-fit:cover;object-position:center top;}
+.slide-img{width:100%;height:100%;object-fit:contain;object-position:center center;background:#0a0a0a;}
 .slide-overlay{position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,0.92) 44%,rgba(0,0,0,0.2) 100%);}
 .hero-content{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;justify-content:center;padding:60px 40px;max-width:56%;}
 .hero-badge{background:#c8f000;color:#000;font-size:11px;font-weight:700;padding:4px 12px;border-radius:4px;display:inline-block;margin-bottom:16px;letter-spacing:1px;width:fit-content;}
